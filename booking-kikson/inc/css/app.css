@@ -1,0 +1,299 @@
+.filter-booking-kikson form{
+    display: flex;
+}
+.filter-booking-kikson form .location{
+    width: 30%;
+    border: solid 4px #ffb700;
+}
+.filter-booking-kikson form .calendar{
+    width: 30%;
+    border: solid 4px #ffb700;
+    position: relative;
+}
+.filter-booking-kikson form .person{
+    width: 30%;
+    border: solid 4px #ffb700;
+    position: relative;
+}
+.filter-booking-kikson form .search{
+    width: 10%;
+    border: solid 4px #ffb700;
+}
+.filter-booking-kikson form .search button{
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    background-color: #006ce4;
+    color: #fff;
+    cursor: pointer;
+}
+.filter-booking-kikson form .calendar .owl-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.filter-booking-kikson form .calendar .owl-nav button span{
+    font-size: 30px;
+}
+.filter-booking-kikson .single-mounth{
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 5px #9e9e9e;
+}
+.filter-booking-kikson .single-mounth .single-date{
+    background-color: #000;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 18px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.filter-booking-kikson .single-mounth .single-date.active{
+    background-color: #14108c;
+    transition: all 0.3s linear;
+}
+.filter-booking-kikson .single-mounth .single-date:hover{
+    background-color: #0b67a5;
+    transition: all 0.3s linear;
+}
+.preview-location{
+    display: flex;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 10px;
+    align-items: center;
+}
+.preview-location .preview-location-icon{
+    width: 30px;
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+.preview-location .preview-location-text{
+    width: calc(100% - 40px);
+    position: relative;
+    display: flex;
+}
+.preview-location .preview-location-text .search-location{
+    position: absolute;
+    top: 47px;
+    left: 0px;
+    background-color: #fff;
+    width: 100%;
+    border: solid 1px #000;
+    display: none;
+    z-index: 10;
+    box-shadow: 0 2px 8px 0 rgba(26,26,26,0.16);
+    border-radius: 4px;
+    border: solid 1px #868686;
+}
+.preview-location .preview-location-text .search-location .location-answer{
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    border-bottom: solid 1px #e7e7e7;
+    transition: all 0.3s linear;
+}
+.preview-location .preview-location-text .search-location .location-answer:last-child{
+    border-bottom: solid 0px #e7e7e7;
+}
+.preview-location .preview-location-text .search-location .location-answer:hover{
+    background-color: #1a1a1a0f;
+    transition: all 0.3s linear;
+}
+.preview-location .preview-location-text .search-location  .location-answer  .location-answer-icon{
+    width: 24px;
+    display: flex;
+    align-items: center;
+    margin: 0px 10px 0px 0px;
+}
+.preview-location .preview-location-text .search-location.active{
+    display: block;
+}
+.preview-location .preview-location-text input{
+    width: 100%;
+    outline: none;
+    height: 30px;
+    border-radius: 4px;
+    border: solid 1px #868686;
+    padding: 0px 0px 0px 10px;
+}
+.preview-calendar{
+    display: flex;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 10px;
+    align-items: center;
+}
+.preview-calendar .preview-calendar-icon svg{
+    width: 30px;
+}
+.preview-calendar .preview-calendar-icon{
+    display: flex;
+    align-items: center;
+    margin: 0px 10px 0px 0px;
+}
+.preview-person{
+    display: flex;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 10px;
+    align-items: center;
+}
+.person .calculate-person{
+    display: none;
+    position: absolute;
+    top: 54px;
+    left: 0px;
+    transition: all .3s linear;
+    padding: 32px 32px 32px 32px;
+}
+.person.active .calculate-person{
+    display: block;
+    transition: all .3s linear;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 16px 0 rgba(26,26,26,0.24);
+    border-radius: 8px 8px 8px 8px;
+    z-index: 100;
+}
+.calculate-person .minus{
+    width: 40px;
+    height: 40px;
+    background-color: aquamarine;
+    cursor: pointer;
+    margin: 0px 10px 0px 0px;
+}
+.calculate-person .value{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculate-person .plus{
+    width: 40px;
+    height: 40px;
+    background-color: aquamarine;
+    cursor: pointer;
+    margin: 0px 0px 0px 10px;
+}
+.calculate-person .adults{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 10px 0px;
+}
+.adults-calculate{
+    display: flex;
+}
+.adults-text{
+    display: flex;
+    align-items: center;
+}
+.calculate-person .children{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 10px 0px;
+}
+.children-calculate{
+    display: flex;
+}
+.children-text{
+    display: flex;
+    align-items: center;
+}
+.calculate-person .rooms{
+    display: flex;
+    justify-content: space-between;
+}
+.rooms-calculate{
+    display: flex;
+}
+.rooms-text{
+    display: flex;
+    align-items: center;
+}
+.preview-person .preview-person-icon svg{
+    width: 30px;
+}
+.preview-person .preview-person-icon{
+    display: flex;
+    align-items: center;
+    margin: 0px 10px 0px 0px;
+}
+.filter-booking-kikson form .calendar .owl-calendar{
+    display: none;
+}
+.filter-booking-kikson form .calendar.active .owl-calendar{
+    display: block;
+    position: absolute;
+    top: 54px;
+    left: 0px;
+    background-color: #fff;
+}
+.owl-calendar{
+    position: relative;
+}
+.owl-calendar .mounth-title{
+    width: 100%;
+    text-align: center;
+    margin: 40px 0px 30px 0px;
+}
+.owl-calendar .owl-nav{
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    left: 0px;
+}
+.owl-calendar .owl-nav button{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red !important;
+}
+.owl-calendar .owl-nav button span{
+    width: 100%;
+}
+
+/* BOOKING RESULTS */
+
+.results-booking-kikson div{
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    display: grid;
+}
+.single-booking-result{
+    border: solid 1px #c6c6c6;
+    border-radius: 8px;
+}
+.single-booking-result .image{
+    display: block;
+    margin: 0px 0px 10px 0px;
+}
+.single-booking-result .title{
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    margin: 0px 0px 10px 0px;
+    padding: 0px 10px 0px 10px;
+}
+.single-booking-result .excerpt{
+    display: block;
+    padding: 0px 10px 10px 10px;
+}
+.single-booking-result .image img{
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* BOOKING RESULTS */

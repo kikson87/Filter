@@ -1,0 +1,30 @@
+/* SEND ME MESSAGE */
+
+.send-me-message{
+    position: absolute;
+    bottom: 150px;
+    right: 150px;
+    padding: 20px;
+    border: solid 1px #000;
+}
+.send-me-message .title{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+    margin: 0px 0px 15px 0px;
+}
+.send-me-message .after-title{
+    width: 100%;
+    max-width: 200px;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0px 0px 15px 0px;
+}
+.send-me-message .icons{
+    display: flex;
+}
+.send-me-message .icons .icon{
+    cursor: pointer;
+}
+
+/* SEND ME MESSAGE */
